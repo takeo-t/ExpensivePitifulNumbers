@@ -4,13 +4,17 @@ class Program
 {
     public static void Main(string[] args)
     {
-        // Console.WriteLine("整数を入力してください");
-        // var x = int.Parse(Console.ReadLine());
-        // var y = x * x;
-        // Console.WriteLine($"{x} × {x} = {y}");
-        string s = "abcdef";
-        Console.WriteLine(s + "ghi");
-        Console.WriteLine(s.Contains("bc"));
-        Console.WriteLine(s.Replace("bc", "__"));
+        Calculate();
+    }
+
+    public static void Calculate()
+    {
+        var x = 10;
+        var y = 20;
+        Console.WriteLine($"In {nameof(Calculate)} method:");
+        Console.WriteLine($"{nameof(x)} = {x}");
+        Console.WriteLine($"{nameof(y)} = {y}");
+        Console.WriteLine($"{nameof(x)} + {nameof(y)} = {x + y}");
+
     }
 }
