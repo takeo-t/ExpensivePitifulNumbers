@@ -1,6 +1,7 @@
 using System;
 using MyNamespace;
 using overLoad;
+using MyNamespace2;
 
 class Program
 {
@@ -13,5 +14,11 @@ class Program
         OverClass.WriteTypeAndValue("Hello");
         OverClass.WriteTypeAndValue(10);
         OverClass.WriteTypeAndValue(3.14);
+        Complex z = new Complex();
+        z.Re = 3;
+        z.Im = 4;
+
+        double abs = z.Abs();
+        Console.WriteLine($"abs = {abs}")
     }
 }
