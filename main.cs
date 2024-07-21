@@ -19,6 +19,6 @@ class Program
         z.Im = 4;
 
         double abs = z.Abs();
-        Console.WriteLine($"abs = {abs}")
+        Console.WriteLine($"abs = {abs}");
     }
 }
